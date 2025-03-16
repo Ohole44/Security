@@ -1,0 +1,18 @@
+Overview:
+
+This guide will walk you through the steps of building two servers.
+One will host Wazuh, a SIEM tool and the other will host TheHive, an alert/case management tool.
+I choose to host these servers on DigitalOcean. This guide will walk through the steps of creating a DigitalOcean Droplet, establishing firewall rules
+
+Reference Links
+1. https://strangebee.com/thehive/- TheHive
+2. https://wazuh.com/- Wazuh
+
+My servers run on Ubuntu (24.04.2 LTS at the time of this writing) and will require the following specifications at a minimum:
+
+8+ GB RAM
+50GB HDD
+
+
+
+
