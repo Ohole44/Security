@@ -1,36 +1,46 @@
-Overview:
+#Home Lab#
+#SIEM & Alert Management#
 
-This guide will show you hwo to 
-1. Build an attacker and victim machine and;
-2. Build a server to host Wazuh, an open-source SIEM & XDR tool.
+Tools:
+Wazuh
+TheHive
 
-I choose to host my Wazuh server through DigitalOcean to save compute power for my attack and victim VMs thay will run on my local host. This guide will walk through the steps of creating a DigitalOcean Droplet (cloud server).
-###This will require payment###
+I choose to host my Wazuh and Hive servers through DigitalOcean to save compute power for my attack and victim VMs that run on my local host. This requires payment.
 
-You can choose to install Wazuh on an Ubuntu VM that runs on your host machine. The install instructions will be the same
+You can choose to install Wazuh or the Hive on an Ubuntu VM that runs on your host machine. The install instructions will be the same. I also choose to use VirtualBox to manage my VMs.
 
 Reference Links
 1. https://www.wazuh.com/
-2. https://www.digitalocean.com/
-3. https://www.kali.org/get-kali/#kali-platforms
-4. https://www.microsoft.com/en-us/software-download/windows10
+2. https://strangebee.com/thehive/
+3. https://www.digitalocean.com/
+ 
 
 Specifications (at the time of this writing):
 
 Wazuh Server
-OS: Ubuntu 22.04 LTS x64 
-8+ GB RAM
-50+ GB HDD
+OS: Ubuntu 22.04 LTS
+Droplet Type: Basic
+8 GB / 2 Intel CPUs
+160 GB NVMe SSDs
+5 TB transfer
 
-Attacker Machine
-OS: Kali Linux 2024.3
-4+ GB RAM
-50+ GB HDD
+Hive Server
+OS: Ubuntu 22.04 LTS
+Droplet Type: Basic
+8 GB / 4 Intel CPUs
+240 GB NVMe SSDs
+6 TB transfer
 
-Victim Machine
-OS: Kali Linux 2024.3
-4+ GB RAM
-50+ GB HDD
+
+
+
+
+
+
+
+
+
+
 
 Once your DigitalOcean account is created:
 
